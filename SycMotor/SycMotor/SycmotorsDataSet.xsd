@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="SycmotorsDataSet" targetNamespace="http://tempuri.org/SycmotorsDataSet.xsd" xmlns:mstns="http://tempuri.org/SycmotorsDataSet.xsd" xmlns="http://tempuri.org/SycmotorsDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="SycmotorsConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="SycmotorsConnectionString (MySettings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.SycMotor.My.MySettings.GlobalReference.Default.SycmotorsConnectionString" Provider="MySql.Data.MySqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="adminTableAdapter" GeneratorDataComponentClassName="adminTableAdapter" Name="admin" UserDataComponentName="adminTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="SycmotorsConnectionString (MySettings)" DbObjectName="Sycmotors.admin" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `idAd`, `nomAd`, `prenom`, `userN`, `motPass` FROM `sycmotors`.`admin`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="couleurTableAdapter" GeneratorDataComponentClassName="couleurTableAdapter" Name="couleur" UserDataComponentName="couleurTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="SycmotorsConnectionString (MySettings)" DbObjectName="Sycmotors.couleur" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `idcolor`, `libcolor`, `idmod` FROM `sycmotors`.`couleur`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="marqueTableAdapter" GeneratorDataComponentClassName="marqueTableAdapter" Name="marque" UserDataComponentName="marqueTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="SycmotorsConnectionString (MySettings)" DbObjectName="Sycmotors.marque" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `idmark`, `libmark` FROM `sycmotors`.`marque`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="modeleTableAdapter" GeneratorDataComponentClassName="modeleTableAdapter" Name="modele" UserDataComponentName="modeleTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="SycmotorsConnectionString (MySettings)" DbObjectName="Sycmotors.modele" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `idmod`, `libmod`, `idmark` FROM `sycmotors`.`modele`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="SycmotorsDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="SycmotorsDataSet" msprop:Generator_UserDSName="SycmotorsDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="admin" msprop:Generator_TableClassName="adminDataTable" msprop:Generator_TableVarName="tableadmin" msprop:Generator_TablePropName="admin" msprop:Generator_RowDeletingName="adminRowDeleting" msprop:Generator_RowChangingName="adminRowChanging" msprop:Generator_RowEvHandlerName="adminRowChangeEventHandler" msprop:Generator_RowDeletedName="adminRowDeleted" msprop:Generator_UserTableName="admin" msprop:Generator_RowChangedName="adminRowChanged" msprop:Generator_RowEvArgName="adminRowChangeEvent" msprop:Generator_RowClassName="adminRow">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="couleur" msprop:Generator_TableClassName="couleurDataTable" msprop:Generator_TableVarName="tablecouleur" msprop:Generator_TablePropName="couleur" msprop:Generator_RowDeletingName="couleurRowDeleting" msprop:Generator_RowChangingName="couleurRowChanging" msprop:Generator_RowEvHandlerName="couleurRowChangeEventHandler" msprop:Generator_RowDeletedName="couleurRowDeleted" msprop:Generator_UserTableName="couleur" msprop:Generator_RowChangedName="couleurRowChanged" msprop:Generator_RowEvArgName="couleurRowChangeEvent" msprop:Generator_RowClassName="couleurRow">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="marque" msprop:Generator_TableClassName="marqueDataTable" msprop:Generator_TableVarName="tablemarque" msprop:Generator_TablePropName="marque" msprop:Generator_RowDeletingName="marqueRowDeleting" msprop:Generator_RowChangingName="marqueRowChanging" msprop:Generator_RowEvHandlerName="marqueRowChangeEventHandler" msprop:Generator_RowDeletedName="marqueRowDeleted" msprop:Generator_UserTableName="marque" msprop:Generator_RowChangedName="marqueRowChanged" msprop:Generator_RowEvArgName="marqueRowChangeEvent" msprop:Generator_RowClassName="marqueRow">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="modele" msprop:Generator_TableClassName="modeleDataTable" msprop:Generator_TableVarName="tablemodele" msprop:Generator_TablePropName="modele" msprop:Generator_RowDeletingName="modeleRowDeleting" msprop:Generator_RowChangingName="modeleRowChanging" msprop:Generator_RowEvHandlerName="modeleRowChangeEventHandler" msprop:Generator_RowDeletedName="modeleRowDeleted" msprop:Generator_UserTableName="modele" msprop:Generator_RowChangedName="modeleRowChanged" msprop:Generator_RowEvArgName="modeleRowChangeEvent" msprop:Generator_RowClassName="modeleRow">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
